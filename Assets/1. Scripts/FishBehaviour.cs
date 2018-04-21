@@ -5,7 +5,7 @@ public class FishBehaviour : MonoBehaviour
 {
 
 	private Vector3 parabStart;
-	private Vector3 parabEnd;
+	[HideInInspector]public Vector3 parabEnd;
 	private float parabTime = 0;
 	private bool followingParab = false;
 
@@ -21,13 +21,14 @@ public class FishBehaviour : MonoBehaviour
         return new Vector3(mid.x, f(t) + Mathf.Lerp(parabStart.y, parabEnd.y, t), mid.z);
     }
 
-	private void StartFollowingParabola(Vector3 startPoint, Vector3 endPoint)
+	public void StartFollowingParabola(Vector3 startPoint, Vector3 endPoint)
 	{
 		if (!followingParab)
 		{
 			followingParab = true;
 			parabStart = startPoint;
 			parabEnd = endPoint;
+			parabTime = 0;
 		}
 	}
 
@@ -38,6 +39,12 @@ public class FishBehaviour : MonoBehaviour
 		{
 			parabTime += parabSpeed * Time.deltaTime;
 			transform.position = FollowParabola(parabTime);
+
+			if (parabTime > 2)
+			{
+				this.gameObject.SetActive(false);
+				followingParab = false;
+			}
 		}
 	}
 /* ------- */
