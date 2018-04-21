@@ -1,16 +1,51 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 
-public class FishBehaviour : MonoBehaviour {
+public class FishBehaviour : MonoBehaviour
+{
 
-	// Use this for initialization
-	void Start () {
-		
+	private Vector3 parabStart;
+	[HideInInspector]public Vector3 parabEnd;
+	private float parabTime = 0;
+	private bool followingParab = false;
+
+	public float parabHeight;
+	public float parabSpeed;
+
+	private Vector3 FollowParabola(float t)
+    {
+        Func<float, float> f = x => -4 * parabHeight * x * x + 4 * parabHeight * x;
+
+        var mid = Vector3.Lerp(parabStart, parabEnd, t);
+
+        return new Vector3(mid.x, f(t) + Mathf.Lerp(parabStart.y, parabEnd.y, t), mid.z);
+    }
+
+	public void StartFollowingParabola(Vector3 startPoint, Vector3 endPoint)
+	{
+		if (!followingParab)
+		{
+			followingParab = true;
+			parabStart = startPoint;
+			parabEnd = endPoint;
+			parabTime = 0;
+		}
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+/* DEBUGGIN */
+	private void Update()
+	{
+		if (followingParab)
+		{
+			parabTime += parabSpeed * Time.deltaTime;
+			transform.position = FollowParabola(parabTime);
+
+			if (parabTime > 2)
+			{
+				this.gameObject.SetActive(false);
+				followingParab = false;
+			}
+		}
 	}
+/* ------- */
 }
