@@ -7,9 +7,10 @@ public class FishBehaviour : MonoBehaviour
 	private Vector3 parabStart;
 	[HideInInspector]public Vector3 parabEnd;
 	private float parabTime = 0;
-	private bool followingParab = false;
+    private float parabHeight;
+    private bool followingParab = false;
 
-	public float parabHeight;
+	public float parabMaxHeight;
 	public float parabSpeed;
 
 	private Vector3 FollowParabola(float t)
@@ -25,6 +26,17 @@ public class FishBehaviour : MonoBehaviour
 	{
 		if (!followingParab)
 		{
+			float distance = endPoint.x - startPoint.x;
+			
+			if (distance < 1)
+			{
+				parabHeight = parabMaxHeight * 1.5f;
+			}
+			else
+			{
+				parabHeight = parabMaxHeight;
+			}
+
 			followingParab = true;
 			parabStart = startPoint;
 			parabEnd = endPoint;
