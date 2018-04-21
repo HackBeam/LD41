@@ -258,10 +258,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dbd2721389e97245b3b14babe7c2db1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointerPrefab: {fileID: 1129214199324408, guid: 5ee532e4b21f0ae49be74f146334790c,
+  pointerPrefab: {fileID: 1129214199324408, guid: 93b8d109253a5564cab8d7a44b96bb5b,
     type: 2}
   fishPool: {fileID: 2069604990}
-  fireAxis: Fire1
+  fireAxis: Jump
+  fishSpawnPoint: {fileID: 665194955}
 --- !u!23 &512123597
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -324,9 +325,38 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.33, y: 1.193, z: -0.02}
   m_LocalScale: {x: 0.12698235, y: 0.34300405, z: 0.16600488}
-  m_Children: []
+  m_Children:
+  - {fileID: 665194955}
   m_Father: {fileID: 0}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &665194954
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 665194955}
+  m_Layer: 0
+  m_Name: rodPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &665194955
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 665194954}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.22, y: -1.9, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 512123600}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1157213085
 GameObject:
