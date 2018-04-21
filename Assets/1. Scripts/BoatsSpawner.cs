@@ -14,6 +14,7 @@ public class BoatsSpawner : MonoBehaviour
      GameObject newShip;
 
     public Vector3 SpawnerPos;
+    public float spawnTime;
 
     // Use this for initialization
     void Start () {
