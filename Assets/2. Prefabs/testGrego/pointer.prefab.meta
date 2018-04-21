@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Assets/3. Materials/delete.me.meta
+<<<<<<< HEAD
+guid: 93b8d109253a5564cab8d7a44b96bb5b
+timeCreated: 1524299564
+=======
+guid: 9bfdeade904b4e7418068fcbd1ab16ca
+timeCreated: 1524304234
+>>>>>>> master
+=======
+guid: 5ee532e4b21f0ae49be74f146334790c
+timeCreated: 1524322557
+>>>>>>> grego:Assets/2. Prefabs/testGrego/pointer.prefab.meta
+licenseType: Free
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
