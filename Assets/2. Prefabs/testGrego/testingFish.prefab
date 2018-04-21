@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parabEnd: {x: 0, y: 0, z: 0}
-  parabHeight: 1.2
+  parabMaxHeight: 1.2
   parabSpeed: 0.7
 --- !u!135 &135977244439639576
 SphereCollider:
