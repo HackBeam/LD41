@@ -50,7 +50,7 @@ public class FishermanBehav : MonoBehaviour {
             _anim.SetBool("isIdling", true);
         }
 
-
+/*
         if(Input.GetKeyDown(KeyCode.Space))
         {
 
@@ -58,8 +58,9 @@ public class FishermanBehav : MonoBehaviour {
             //_anim.SetTrigger("isThrowing");
             
         }
+*/
     }
-
+/*
     IEnumerator WaitingforShot()
     {
         _anim.speed = 4;
@@ -74,6 +75,7 @@ public class FishermanBehav : MonoBehaviour {
         yield return null;
         _anim.speed = 1;
     }
+*/
 }
 
 

@@ -14,30 +14,53 @@ public class RodBehaviour : MonoBehaviour
 	private GameObject pointer;
     private bool keyDown;
     private bool fishing;
+	private bool rodDown = false;
+	private FishermanBehav movementComp;
+	private Animator _anim;
 
     private void Awake()
 	{
 		pointer = Instantiate(pointerPrefab, transform.position, Quaternion.identity);
 		pointer.SetActive(false);
+		movementComp = GetComponent<FishermanBehav>();
+		_anim = GetComponent<Animator>();
 	}
 
 	private void ThrowRod()
 	{
-		//TODO: Lock movement
+		movementComp.enabled = false;
+
+		StartCoroutine(WaitingforShot());
+	}
+
+	IEnumerator WaitingforShot()
+    {
+        _anim.speed = 4;
+        _anim.SetBool("isWalking", false);
+        _anim.SetBool("isIdling", false);
+
+
+        _anim.Play("Throw", -1, 0f);
+        
+        yield return new WaitForSeconds(0.5f);
+        
+        //yield return null;
+
+        _anim.speed = 8;
 
 		Vector3 pointerPos = fishSpawnPoint.position;
-		pointerPos.y += 1;
+		pointerPos.y += 10;
 		
-		//TODO: Animation
-
 		pointer.transform.position = pointerPos;
 		pointer.SetActive(true);
-	}
+		rodDown = true;
+    }
 
 	private void Fishing()
 	{
 		pointer.SetActive(false);
-		//TODO: Animation
+		_anim.speed = 1;
+		//TODO: Animation up
 
         GameObject fish = fishPool.GetFreeObject();
 		fish.transform.position = fishSpawnPoint.position;
@@ -49,10 +72,15 @@ public class RodBehaviour : MonoBehaviour
 		
 		s.Append(fish.transform.DOPath(waypoints, 0.1f, PathType.CatmullRom).SetEase(Ease.Linear))
 		 .AppendCallback(() => fishBehaviour.StartFollowingParabola(transform.position, pointer.transform.position))
-		 .AppendCallback(() => fishing = false);
+		 .AppendCallback(SetidleState);
 		
-		//TODO: Unlock movement
-		
+	}
+
+	private void SetidleState()
+	{
+		fishing = false;
+		movementComp.enabled = true;
+		_anim.SetBool("isIdling", true);
 	}
 	
 	private void Update()
@@ -63,9 +91,10 @@ public class RodBehaviour : MonoBehaviour
 			keyDown = true;
 			ThrowRod();
 		}
-		else if (Input.GetAxisRaw(fireAxis) == 0 && keyDown)
+		else if (Input.GetAxisRaw(fireAxis) == 0 && keyDown && rodDown)
 		{
 			keyDown = false;
+			rodDown = false;
 			Fishing();
 		}
 	}
