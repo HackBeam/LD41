@@ -32,6 +32,11 @@ public class FishBehaviour : MonoBehaviour
 		}
 	}
 
+	private void OnEnable()
+	{
+		parabTime = 0;
+	}
+
 /* DEBUGGIN */
 	private void Update()
 	{
