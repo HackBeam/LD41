@@ -249,6 +249,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4306682804552270}
   - component: {fileID: 95618196661624660}
+  - component: {fileID: 114988456688057318}
+  - component: {fileID: 114849776653583396}
   m_Layer: 0
   m_Name: Fisherman_Mixamo_Idle
   m_TagString: Untagged
@@ -676,6 +678,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1974625197472682
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4110502486975246}
+  m_Layer: 0
+  m_Name: rodPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &4024074066714792
 Transform:
   m_ObjectHideFlags: 1
@@ -731,6 +748,19 @@ Transform:
   - {fileID: 4824576407304300}
   m_Father: {fileID: 4978804404300648}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4110502486975246
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1974625197472682}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.77, y: -1.75, z: 1.45}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4306682804552270}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4119240319151240
 Transform:
@@ -862,15 +892,16 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1365784972140056}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2574458, y: 0.04026413, z: -0.42480946}
+  m_LocalRotation: {x: 0, y: 0.8571673, z: 0, w: 0.51503813}
+  m_LocalPosition: {x: -0.49, y: 2.46, z: -0.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4143392973110514}
   - {fileID: 4906522626725262}
+  - {fileID: 4110502486975246}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 118, z: 0}
 --- !u!4 &4308899113524302
 Transform:
   m_ObjectHideFlags: 1
@@ -1358,14 +1389,42 @@ Animator:
   m_GameObject: {fileID: 1365784972140056}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 99c022146e5ca2c48839f1d7c92a10c0, type: 3}
-  m_Controller: {fileID: 9100000, guid: 1215ce0d19cfc124985dcf547e046b7a, type: 2}
+  m_Controller: {fileID: 9100000, guid: d2d0cb1f56be0304da21827b8e3f778c, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114849776653583396
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1365784972140056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b3a566e90ea544f8a6cf6fa505f741, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 3
+--- !u!114 &114988456688057318
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1365784972140056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dbd2721389e97245b3b14babe7c2db1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointerPrefab: {fileID: 1129214199324408, guid: 93b8d109253a5564cab8d7a44b96bb5b,
+    type: 2}
+  fishPool: {fileID: 0}
+  fireAxis: Jump
+  fishSpawnPoint: {fileID: 4110502486975246}
 --- !u!137 &137503545823831272
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
