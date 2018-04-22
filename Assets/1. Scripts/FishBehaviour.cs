@@ -4,6 +4,7 @@ using UnityEngine;
 public class FishBehaviour : MonoBehaviour
 {
 
+	public int damage = 1;
 	private Vector3 parabStart;
 	[HideInInspector]public Vector3 parabEnd;
 	private float parabTime = 0;

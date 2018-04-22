@@ -21,7 +21,7 @@ public class BoatsSpawner : MonoBehaviour
 
         
 
-        InvokeRepeating("BoatsReady", 0, 1);
+        InvokeRepeating("BoatsReady", 0, spawnTime);
 
     }
 	
