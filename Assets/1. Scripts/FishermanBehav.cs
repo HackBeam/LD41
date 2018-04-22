@@ -5,6 +5,8 @@ using UnityEngine;
 public class FishermanBehav : MonoBehaviour {
 
     public float Speed;
+    public float maxLimit;
+    public float minLimit;
     Animator _anim;
 
 	// Use this for initialization
