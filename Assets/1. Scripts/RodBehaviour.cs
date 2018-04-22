@@ -38,10 +38,10 @@ public class RodBehaviour : MonoBehaviour
         _anim.speed = 4;
         _anim.SetBool("isWalking", false);
         _anim.SetBool("isIdling", false);
-
+        _anim.SetBool("isPullingBack", false);
 
         _anim.Play("Throw", -1, 0f);
-        
+
         yield return new WaitForSeconds(0.5f);
         
         //yield return null;
@@ -56,11 +56,28 @@ public class RodBehaviour : MonoBehaviour
 		rodDown = true;
     }
 
+    void PullinRodBack()
+    {
+        //if(Input.GetKeyUp(KeyCode.Space))
+        
+            _anim.speed = 8;
+            _anim.SetBool("isWalking", false);
+            _anim.SetBool("isIdling", false);
+
+            _anim.SetBool("isPullingBack", true);
+
+        
+    }
+
 	private void Fishing()
 	{
 		pointer.SetActive(false);
-		_anim.speed = 1;
-		//TODO: Animation up
+
+        PullinRodBack();
+
+        _anim.speed = 1;
+
+        //TODO: Animation up
 
         GameObject fish = fishPool.GetFreeObject();
 		fish.transform.position = fishSpawnPoint.position;

@@ -8,6 +8,7 @@ public class FishermanBehav : MonoBehaviour {
     public float maxLimit;
     public float minLimit;
     Animator _anim;
+    public bool isInWater;
 
 	// Use this for initialization
 	void Awake ()
@@ -29,7 +30,7 @@ public class FishermanBehav : MonoBehaviour {
 
         if (_vertical != 0)
         {
-            print(_vertical);
+
             transform.Translate(Vector3.forward * _vertical * Speed * Time.deltaTime, Space.World);
         }
     }
@@ -44,14 +45,23 @@ public class FishermanBehav : MonoBehaviour {
         {
             _anim.SetBool("isIdling", false);
             _anim.SetBool("isWalking", true);
+            _anim.SetBool("isPullingBack", false);
         }
 
         else 
         {
             _anim.SetBool("isWalking", false);
             _anim.SetBool("isIdling", true);
+            _anim.SetBool("isPullingBack", false);
         }
 
+        if(isInWater)
+        {
+            _anim.SetBool("isInWater", isInWater);
+            _anim.SetBool("isIdling", false);
+            _anim.SetBool("isWalking", false);
+            _anim.SetBool("isPullingBack", false);
+        }
 /*
         if(Input.GetKeyDown(KeyCode.Space))
         {
