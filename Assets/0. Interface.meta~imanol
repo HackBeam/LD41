@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Demigiant/DOTween.meta
+<<<<<<< HEAD
+guid: 9646614678060eb489af2fa3200d2417
+=======
+guid: 353077eb5ad81ec4eacb1edff3b54d89
+>>>>>>> olaf
+=======
 guid: 431256909fb844e49b4ee762d88c1ae1
+>>>>>>> master:Assets/0. Interface.meta~imanol
 folderAsset: yes
 timeCreated: 1524405640
 licenseType: Free

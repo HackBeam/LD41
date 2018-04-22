@@ -18,7 +18,7 @@ public class BoatHealth : MonoBehaviour {
         {
 			currentHealth -= other.GetComponent<FishBehaviour>().damage;
 			Debug.Log(currentHealth);
-			if(currentHealth < 0){
+			if(currentHealth <= 0){
 				Destroy(gameObject);
 			}
 		}
