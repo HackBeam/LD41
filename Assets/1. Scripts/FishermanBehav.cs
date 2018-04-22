@@ -5,6 +5,8 @@ using UnityEngine;
 public class FishermanBehav : MonoBehaviour {
 
     public float Speed;
+    public float maxLimit;
+    public float minLimit;
     Animator _anim;
     public bool isInWater;
 
@@ -28,7 +30,6 @@ public class FishermanBehav : MonoBehaviour {
 
         if (_vertical != 0)
         {
-
             transform.Translate(Vector3.forward * _vertical * Speed * Time.deltaTime, Space.World);
         }
     }
