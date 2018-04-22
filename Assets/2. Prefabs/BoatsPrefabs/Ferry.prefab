@@ -25,7 +25,6 @@ GameObject:
   - component: {fileID: 54449627960082824}
   - component: {fileID: 114496297949358490}
   - component: {fileID: 114184668302283848}
-  - component: {fileID: 65176492678316214}
   m_Layer: 0
   m_Name: Ferry
   m_TagString: Untagged
@@ -102,18 +101,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &65176492678316214
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1022129884570034}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65849427819682238
 BoxCollider:
   m_ObjectHideFlags: 1

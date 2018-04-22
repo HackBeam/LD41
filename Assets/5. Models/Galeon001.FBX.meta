@@ -1,36 +1,14 @@
 fileFormatVersion: 2
-guid: bc77936856d0cde46af320f5687b8196
-timeCreated: 1524405762
-licenseType: Free
+guid: 122b32d2e25f54d459aa4fd85d08e6af
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Galeon001
-    100004: mediumboat001
-    100006: Paperboat001
-    100008: Sailboat
     400000: //RootNode
-    400002: Galeon001
-    400004: mediumboat001
-    400006: Paperboat001
-    400008: Sailboat
     2100000: 'Material #25'
-    2100002: No Name
-    2300000: Galeon001
-    2300002: mediumboat001
-    2300004: Paperboat001
-    2300006: Sailboat
-    2300008: //RootNode
-    3300000: Galeon001
-    3300002: mediumboat001
-    3300004: Paperboat001
-    3300006: Sailboat
-    3300008: //RootNode
-    4300000: Paperboat001
-    4300002: Galeon001
-    4300004: Sailboat
-    4300006: mediumboat001
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Galeon001
     9500000: //RootNode
   externalObjects: {}
   materials:
