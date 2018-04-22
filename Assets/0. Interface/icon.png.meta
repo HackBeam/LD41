@@ -1,19 +1,6 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-guid: 26725e3e98f8cb140a32893a05762b3c
-timeCreated: 1524405221
-=======
->>>>>>> master
-guid: 93b4067f8fc18fe498819250c28781c8
-timeCreated: 1524405702
->>>>>>> master
-=======
-guid: c835ade1fc075414090ddb34ec565b5a
-timeCreated: 1524407790
->>>>>>> olaf
+guid: 2686bcd746f9e3b4087ad19240957f29
+timeCreated: 1524413920
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}

@@ -4,15 +4,29 @@ using UnityEngine;
 
 public class PickedFish : MonoBehaviour {
 
-    public GameObject PassedFish;
+	public ParticleSystem normalParticles;
+	public ParticleSystem whaleParticles;
 
-	// Use this for initialization
-	void Start () {
-		
+    private GameObject passedFish;
+
+	public void FishAppear(GameObject fish, bool isWhale)
+	{
+		passedFish = fish;
+
+		if (isWhale)
+			whaleParticles.gameObject.SetActive(true);
+		else
+			normalParticles.gameObject.SetActive(true);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+	public GameObject GetFish()
+	{
+		GameObject result = passedFish;
+		passedFish = null;
+
+		whaleParticles.gameObject.SetActive(false);
+		normalParticles.gameObject.SetActive(false);
+
+		return result;
 	}
 }

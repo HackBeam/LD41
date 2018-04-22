@@ -1,9 +1,18 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
+guid: 69721936cfaeab64dbfd37f9e02855f3
+timeCreated: 1524405699
+=======
+guid: e70f3f2b9dabb574b950cc20c1b5514c
+timeCreated: 1524407812
+>>>>>>> olaf
+=======
 guid: 16be9fc628e75234a961af7df3a70d53
 =======
 guid: e70f3f2b9dabb574b950cc20c1b5514c
 timeCreated: 1524407812
+>>>>>>> master
 licenseType: Free
 >>>>>>> olaf
 TextureImporter:
