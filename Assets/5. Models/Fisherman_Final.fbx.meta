@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: fb5d77ebca7a148438d12bdb8d0e7881
 timeCreated: 1524407874
+=======
+guid: 19f04030580bb9e46a590c4d3c8c3cf1
+timeCreated: 1524407738
+>>>>>>> master
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -133,8 +138,13 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
+<<<<<<< HEAD
     normalSmoothAngle: 60
     normalImportMode: 0
+=======
+    normalSmoothAngle: 0
+    normalImportMode: 1
+>>>>>>> master
     tangentImportMode: 3
     normalCalculationMode: 4
   importAnimation: 1
