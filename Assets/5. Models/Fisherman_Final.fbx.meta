@@ -1,12 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 19f04030580bb9e46a590c4d3c8c3cf1
-timeCreated: 1524407738
-=======
-guid: 85eda7220be05564ba5376947a73fe5a
-timeCreated: 1524407820
->>>>>>> olaf
-licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -138,13 +131,8 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
-<<<<<<< HEAD
-    normalSmoothAngle: 0
-    normalImportMode: 1
-=======
     normalSmoothAngle: 60
     normalImportMode: 0
->>>>>>> olaf
     tangentImportMode: 3
     normalCalculationMode: 4
   importAnimation: 1

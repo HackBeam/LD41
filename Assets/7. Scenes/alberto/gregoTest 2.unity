@@ -236,7 +236,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 168822009}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpawnerFishFour
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -308,6 +308,10 @@ Prefab:
         type: 2}
       propertyPath: randomSeed
       value: -2106531195
+      objectReference: {fileID: 0}
+    - target: {fileID: 1498472086496440, guid: e9495c468088231449efb47ab5f58ef8, type: 2}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9495c468088231449efb47ab5f58ef8, type: 2}
@@ -547,6 +551,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1498472086496440, guid: e9495c468088231449efb47ab5f58ef8, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9495c468088231449efb47ab5f58ef8, type: 2}
   m_IsPrefabParent: 0
@@ -770,6 +778,10 @@ Prefab:
       propertyPath: randomSeed
       value: -758115464
       objectReference: {fileID: 0}
+    - target: {fileID: 1498472086496440, guid: e9495c468088231449efb47ab5f58ef8, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9495c468088231449efb47ab5f58ef8, type: 2}
   m_IsPrefabParent: 0
@@ -941,7 +953,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1336231011}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpawnerFishOne
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -962,6 +974,23 @@ Transform:
   m_Father: {fileID: 1893693573}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1348523408 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1974625197472682, guid: 0c5d3755f54a70e48bbeb29507e8198a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1565998198}
+--- !u!65 &1348523409
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1348523408}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1397707274
 GameObject:
   m_ObjectHideFlags: 0
@@ -1106,7 +1135,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1431729455}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpawnerFishTwo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1140,7 +1169,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1501065781}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpawnerFishFive
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1213,6 +1242,10 @@ Prefab:
       propertyPath: randomSeed
       value: 1270244823
       objectReference: {fileID: 0}
+    - target: {fileID: 1498472086496440, guid: e9495c468088231449efb47ab5f58ef8, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9495c468088231449efb47ab5f58ef8, type: 2}
   m_IsPrefabParent: 0
@@ -1265,6 +1298,39 @@ Prefab:
       propertyPath: fishSpawnPoint
       value: 
       objectReference: {fileID: 1311949129}
+    - target: {fileID: 114988456688057318, guid: 0c5d3755f54a70e48bbeb29507e8198a,
+        type: 2}
+      propertyPath: fishSpawnLayer.m_Bits
+      value: 1024
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110502486975246, guid: 0c5d3755f54a70e48bbeb29507e8198a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110502486975246, guid: 0c5d3755f54a70e48bbeb29507e8198a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.24227393
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110502486975246, guid: 0c5d3755f54a70e48bbeb29507e8198a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110502486975246, guid: 0c5d3755f54a70e48bbeb29507e8198a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.9702079
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110502486975246, guid: 0c5d3755f54a70e48bbeb29507e8198a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.1900023
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110502486975246, guid: 0c5d3755f54a70e48bbeb29507e8198a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 2.210004
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110502486975246, guid: 0c5d3755f54a70e48bbeb29507e8198a, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -28.042002
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0c5d3755f54a70e48bbeb29507e8198a, type: 2}
   m_IsPrefabParent: 0
@@ -1405,6 +1471,10 @@ Prefab:
         type: 2}
       propertyPath: randomSeed
       value: 1059978172
+      objectReference: {fileID: 0}
+    - target: {fileID: 1498472086496440, guid: e9495c468088231449efb47ab5f58ef8, type: 2}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9495c468088231449efb47ab5f58ef8, type: 2}
@@ -1633,7 +1703,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1993547995}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpawnerFishThree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
