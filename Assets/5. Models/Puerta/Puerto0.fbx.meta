@@ -1,34 +1,17 @@
 fileFormatVersion: 2
-guid: bc77936856d0cde46af320f5687b8196
-timeCreated: 1524405762
+guid: 11538b6ad828c5140ac66b54906ee643
+timeCreated: 1524405702
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Galeon001
-    100004: mediumboat001
-    100006: Paperboat001
-    100008: Sailboat
     400000: //RootNode
-    400002: Galeon001
-    400004: mediumboat001
-    400006: Paperboat001
-    400008: Sailboat
-    2100000: 'Material #25'
-    2100002: No Name
-    2300000: Galeon001
-    2300002: mediumboat001
-    2300004: Paperboat001
-    2300006: Sailboat
-    3300000: Galeon001
-    3300002: mediumboat001
-    3300004: Paperboat001
-    3300006: Sailboat
-    4300000: Paperboat001
-    4300002: Galeon001
-    4300004: Sailboat
-    4300006: mediumboat001
+    2100000: PezEspada
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Mesh
+    7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -81,8 +64,8 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
-    normalSmoothAngle: 60
-    normalImportMode: 0
+    normalSmoothAngle: 0
+    normalImportMode: 1
     tangentImportMode: 3
     normalCalculationMode: 4
   importAnimation: 1
