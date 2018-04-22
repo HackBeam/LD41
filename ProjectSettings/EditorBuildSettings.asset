@@ -4,4 +4,7 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/7. Scenes/Pablo01.unity
+    guid: 05e7c17202e7e1048b6f317cb4766448
