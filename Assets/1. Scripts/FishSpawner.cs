@@ -52,46 +52,50 @@ public class FishSpawner : MonoBehaviour {
         {
             _rdomly = .9f;
         }
-        
+
 
         //TODO: Intantiate fishes
-
-        PickingSystem(_fishesParticles[_rndSelection].gameObject, _rdomly);
+        _fishesParticles[_rndSelection].GetComponent<PickedFish>().PassedFish = PickingSystem(_rdomly);
+       // Instantiate(PickingSystem(_rdomly), _fishesParticles[_rndSelection].transform.position, Quaternion.identity);
 
         _throws++;
 
     }
 
-    private void PickingSystem(GameObject _fishPlace, float _rdomly)
+    public GameObject PickingSystem(float _rdomly)
     {
+        GameObject _pickedFish = null;
+
         if (_rdomly >= .9f)
         {
-             Instantiate(Fishes[0], _fishPlace.transform.position, Quaternion.identity);
+            _pickedFish = Fishes[0];
 
         }
 
         if (_rdomly > .5f && _rdomly < .9f)
         {
-             Instantiate(Fishes[1], _fishPlace.transform.position, Quaternion.identity);
+            _pickedFish = Fishes[1];
 
         }
 
         else if (_rdomly >= .3f && _rdomly <= .5f)
         {
-            Instantiate(Fishes[2], _fishPlace.transform.position, Quaternion.identity);
+            _pickedFish = Fishes[2];
 
         }
 
         else if (_rdomly > .1f && _rdomly < .3f)
         {
-             Instantiate(Fishes[3], _fishPlace.transform.position, Quaternion.identity);
+             _pickedFish = Fishes[3];
 
         }
 
         else if (_rdomly <= .1f)
         {
-           Instantiate(Fishes[4], _fishPlace.transform.position, Quaternion.identity);
+          _pickedFish = Fishes[4];
 
         }
+
+        return _pickedFish;
     }
 }
