@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FishSpawner : MonoBehaviour {
 
-    List<ParticleSystem> _fishesParticles;
+    List<PickedFish> _fishesPoints;
 
     public List<GameObject> Fishes;
 
@@ -16,7 +16,7 @@ public class FishSpawner : MonoBehaviour {
 
     private void Awake()
     {
-        _fishesParticles = new List<ParticleSystem>(transform.GetComponentsInChildren<ParticleSystem>());
+        _fishesPoints = new List<PickedFish>(transform.GetComponentsInChildren<PickedFish>());
         _rdomWhale = Random.Range(0, 6);
     }
 
@@ -39,58 +39,61 @@ public class FishSpawner : MonoBehaviour {
 
     void RandomizingFishesParticles()
     {
-        foreach (var item in _fishesParticles)
+        /*foreach (var item in _fishesPoints)
         {
             item.gameObject.SetActive(false);
-        }
-        int _rndSelection = Random.Range(0, _fishesParticles.Count);
-        _fishesParticles[_rndSelection].gameObject.SetActive(true);
+        }*/
 
-        float _rdomly = Random.Range(0f, 1f);
+        int pointSelected = Random.Range(0, _fishesPoints.Count);
+
+        float fishSelected = Random.Range(0f, 1f);
         
         if (_throws == _rdomWhale)
         {
-            _rdomly = .9f;
+            fishSelected = .9f;
         }
 
+        GameObject fish = PickingSystem(fishSelected);
+
+        _fishesPoints[pointSelected].FishAppear(fish, fishSelected >= .9f); //gameObject.SetActive(true);
 
         //TODO: Intantiate fishes
-        _fishesParticles[_rndSelection].GetComponent<PickedFish>().PassedFish = PickingSystem(_rdomly);
-       // Instantiate(PickingSystem(_rdomly), _fishesParticles[_rndSelection].transform.position, Quaternion.identity);
+        //_fishesPoints[pointSelected].GetComponent<PickedFish>().PassedFish = 
+       // Instantiate(PickingSystem(fishSelected), _fishesPoints[pointSelected].transform.position, Quaternion.identity);
 
         _throws++;
 
     }
 
-    public GameObject PickingSystem(float _rdomly)
+    public GameObject PickingSystem(float fishSelected)
     {
         GameObject _pickedFish = null;
 
-        if (_rdomly >= .9f)
+        if (fishSelected >= .9f)
         {
             _pickedFish = Fishes[0];
 
         }
 
-        if (_rdomly > .5f && _rdomly < .9f)
+        if (fishSelected > .5f && fishSelected < .9f)
         {
             _pickedFish = Fishes[1];
 
         }
 
-        else if (_rdomly >= .3f && _rdomly <= .5f)
+        else if (fishSelected >= .3f && fishSelected <= .5f)
         {
             _pickedFish = Fishes[2];
 
         }
 
-        else if (_rdomly > .1f && _rdomly < .3f)
+        else if (fishSelected > .1f && fishSelected < .3f)
         {
              _pickedFish = Fishes[3];
 
         }
 
-        else if (_rdomly <= .1f)
+        else if (fishSelected <= .1f)
         {
           _pickedFish = Fishes[4];
 
