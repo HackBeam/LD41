@@ -30,7 +30,6 @@ public class FishermanBehav : MonoBehaviour {
 
         if (_vertical != 0)
         {
-
             transform.Translate(Vector3.forward * _vertical * Speed * Time.deltaTime, Space.World);
         }
     }

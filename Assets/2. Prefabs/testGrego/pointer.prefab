@@ -97,5 +97,5 @@ MonoBehaviour:
   waterLayer:
     serializedVersion: 2
     m_Bits: 16
-  movSpeed: 20
+  movSpeed: 10
   maxDistance: 20
