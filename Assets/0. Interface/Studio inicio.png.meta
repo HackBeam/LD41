@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 93b4067f8fc18fe498819250c28781c8
 timeCreated: 1524405702
+=======
+guid: c835ade1fc075414090ddb34ec565b5a
+timeCreated: 1524407790
+>>>>>>> olaf
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}

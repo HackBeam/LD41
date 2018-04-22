@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 705e22b2a9461bd479c3b72ac9b2968e
 folderAsset: yes
 timeCreated: 1524405697
+=======
+guid: 169916a421c0f03489f0c8a30033785d
+folderAsset: yes
+timeCreated: 1524407758
+>>>>>>> olaf
 licenseType: Free
 DefaultImporter:
   externalObjects: {}

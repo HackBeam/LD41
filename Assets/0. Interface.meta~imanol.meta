@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 5afc3ab4ad6304b458cfcfb1f3b9858c
 timeCreated: 1524407735
+=======
+guid: c5fd8879cdc7c2441a99dcea6e527e79
+timeCreated: 1524407758
+>>>>>>> olaf
 licenseType: Free
 DefaultImporter:
   externalObjects: {}

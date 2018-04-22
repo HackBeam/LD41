@@ -25,7 +25,6 @@ GameObject:
   - component: {fileID: 54313366878901114}
   - component: {fileID: 114415304156783264}
   - component: {fileID: 114677367839551224}
-  - component: {fileID: 65363271862573460}
   m_Layer: 0
   m_Name: SailBoat
   m_TagString: Untagged
@@ -113,18 +112,6 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &65363271862573460
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1186594090276380}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.99999994, y: 1, z: 0.99999994}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114415304156783264
 MonoBehaviour:
