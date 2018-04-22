@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 135977244439639576}
   - component: {fileID: 23578368554778210}
   - component: {fileID: 114139654713417696}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: testingFish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,9 +95,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba292f79284375443908e20930ec13e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
   parabEnd: {x: 0, y: 0, z: 0}
-  parabMaxHeight: 1.2
-  parabSpeed: 0.7
+  parabMaxHeight: 3.82
+  parabSpeed: 3
 --- !u!135 &135977244439639576
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -105,7 +106,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1504134948818706}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
