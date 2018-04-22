@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickedFish : MonoBehaviour {
+public class PickedFish : MonoBehaviour
+{
 
 	public ParticleSystem normalParticles;
 	public ParticleSystem whaleParticles;
