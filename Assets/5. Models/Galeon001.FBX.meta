@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: b61e170c9fa51814faf4f8a8ca7bc3b1
-timeCreated: 1524396744
+guid: bc77936856d0cde46af320f5687b8196
+timeCreated: 1524405762
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -21,10 +21,12 @@ ModelImporter:
     2300002: mediumboat001
     2300004: Paperboat001
     2300006: Sailboat
+    2300008: //RootNode
     3300000: Galeon001
     3300002: mediumboat001
     3300004: Paperboat001
     3300006: Sailboat
+    3300008: //RootNode
     4300000: Paperboat001
     4300002: Galeon001
     4300004: Sailboat
