@@ -57,16 +57,12 @@ public class RodBehaviour : MonoBehaviour
     }
 
     void PullinRodBack()
-    {
-        //if(Input.GetKeyUp(KeyCode.Space))
-        
-            _anim.speed = 8;
-            _anim.SetBool("isWalking", false);
-            _anim.SetBool("isIdling", false);
+    {   
+		_anim.speed = 8;
+		_anim.SetBool("isWalking", false);
+		_anim.SetBool("isIdling", false);
 
-            _anim.SetBool("isPullingBack", true);
-
-        
+		_anim.SetBool("isPullingBack", true);
     }
 
 	private void Fishing()
@@ -77,19 +73,26 @@ public class RodBehaviour : MonoBehaviour
 
         _anim.speed = 1;
 
-        //TODO: Animation up
+		Collider[] c = Physics.OverlapBox(fishSpawnPoint.position, Vector3.one * 0.25f);
 
-        GameObject fish = fishPool.GetFreeObject();
-		fish.transform.position = fishSpawnPoint.position;
-		
-		Vector3[] waypoints = new[] { new Vector3(-0.04983821f,0.4744337f,-0.01836145f), new Vector3(0.08313101f,0.8105265f,0f), new Vector3(-0.03325231f,1.138894f,-0.01836145f), new Vector3(-0.2909583f,1.267747f,-0.01836145f) };
-		Sequence s = DOTween.Sequence();
-		FishBehaviour fishBehaviour = fish.GetComponent<FishBehaviour>();
-		fish.SetActive(true);
-		
-		s.Append(fish.transform.DOPath(waypoints, 0.1f, PathType.CatmullRom).SetEase(Ease.Linear))
-		 .AppendCallback(() => fishBehaviour.StartFollowingParabola(transform.position, pointer.transform.position))
-		 .AppendCallback(SetidleState);
+		if (c.Length > 0)
+		{
+			GameObject fish = Instantiate(c[0].GetComponent<PickedFish>().fish, fishSpawnPoint.position);
+			fish.transform.position = fishSpawnPoint.position;
+			
+			Vector3[] waypoints = new[] { new Vector3(-0.04983821f,0.4744337f,-0.01836145f), new Vector3(0.08313101f,0.8105265f,0f), new Vector3(-0.03325231f,1.138894f,-0.01836145f), new Vector3(-0.2909583f,1.267747f,-0.01836145f) };
+			FishBehaviour fishBehaviour = fish.GetComponent<FishBehaviour>();
+			fish.SetActive(true);
+			
+			Sequence s = DOTween.Sequence();
+			s.Append(fish.transform.DOPath(waypoints, 0.1f, PathType.CatmullRom).SetEase(Ease.Linear))
+			 .AppendCallback(() => fishBehaviour.StartFollowingParabola(transform.position, pointer.transform.position))
+			 .AppendCallback(SetidleState);
+		}
+		else
+		{
+			//TODO: Hacer solo animacion y despues SetidleState
+		}
 		
 	}
 
