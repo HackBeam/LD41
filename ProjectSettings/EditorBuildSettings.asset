@@ -6,5 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/7. Scenes/alberto/Pablo02.unity
     guid: 6be6224ba9800d242a5c62c07f9872f5
+=======
+    path: Assets/7. Scenes/Pablo01.unity
+    guid: 05e7c17202e7e1048b6f317cb4766448
+>>>>>>> pablo

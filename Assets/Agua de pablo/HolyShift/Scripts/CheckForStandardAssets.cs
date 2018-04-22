@@ -1,10 +1,15 @@
+<<<<<<< HEAD
 ﻿
 #if UNITY_EDITOR
+=======
+﻿#if UNITY_EDITOR
+>>>>>>> pablo
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 [ExecuteInEditMode]
+
 public class CheckForStandardAssets : MonoBehaviour {
 
 	// Use this for initialization
@@ -18,4 +23,8 @@ public class CheckForStandardAssets : MonoBehaviour {
 		
 	}
 }
+<<<<<<< HEAD
 #endif
+=======
+#endif
+>>>>>>> pablo
