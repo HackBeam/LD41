@@ -151,11 +151,11 @@ Material:
     - _NormalsDisplacement: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _RandomHeight: -0.5
+    - _RandomHeight: -0.2
     - _RandomSpeed: 5
     - _ReflDistort: 0.9267696
     - _RefrDistort: 1.4393286
-    - _Shininess: 17.1
+    - _Shininess: 71.9
     - _ShoreTiling: 56.862743
     - _SkyBoxReflection: 0
     - _SmoothnessTextureChannel: 0
@@ -166,8 +166,8 @@ Material:
     - _WaterDepth: 40.98077
     - _WaveCapsAmount: 0.18275861
     - _WaveFoamDistort: 0.27931035
-    - _WaveHeight: 1
-    - _WaveLength: 0.5
+    - _WaveHeight: 0.2
+    - _WaveLength: 0.1
     - _WaveScale: 0.046289656
     - _WaveSpeed: 3
     - _ZWrite: 1
@@ -180,7 +180,7 @@ Material:
     - _BumpDirection: {r: 30, g: 30, b: 30, a: -50}
     - _BumpMap_ST: {r: 1, g: 1, b: 0, a: 0}
     - _BumpTiling: {r: 0.03, g: 0.03, b: 0.03, a: 0.03}
-    - _Color: {r: 0, g: 0.3836207, b: 0.6544118, a: 1}
+    - _Color: {r: 0.27058825, g: 0.43137258, b: 0.5882353, a: 1}
     - _DepthColor: {r: 0.027511697, g: 0.14179105, b: 0.13226777, a: 0.4627451}
     - _DepthColorFade: {r: 0.8880597, g: 0.27834705, b: 0.44463244, a: 0.22352941}
     - _Displacement: {r: 6.6371665, g: 20.353983, b: -1, a: -0.681416}
@@ -211,7 +211,7 @@ Material:
     - _ShoreColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShorePerturbation: {r: 0, g: 0, b: 0, a: 0}
     - _ShoreTiling: {r: 1, g: 1, b: 0.1, a: 0.1}
-    - _SpecColor: {r: 0, g: 0.8758622, b: 1, a: 1}
+    - _SpecColor: {r: 0.34117648, g: 0.7019608, b: 0.34117648, a: 1}
     - _SpecularColor: {r: 0.91791046, g: 0.91791046, b: 0.91791046, a: 1}
     - _UnderwaterColor: {r: 0.6950323, g: 0.89552236, b: 0.7502397, a: 1}
     - _WaveOffset: {r: -0, g: -0, b: -0, a: -0}

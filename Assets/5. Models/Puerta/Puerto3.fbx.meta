@@ -1,14 +1,17 @@
 fileFormatVersion: 2
-guid: 7c12489d88a5d754a96bd413b4fccf2d
+guid: a4388df2af98b7e4ca460794630266ca
+timeCreated: 1524405703
+licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: No Name
+    2100000: PezEspada
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Galeon001
+    4300000: Mesh
+    7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -61,8 +64,8 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
-    normalSmoothAngle: 60
-    normalImportMode: 0
+    normalSmoothAngle: 0
+    normalImportMode: 1
     tangentImportMode: 3
     normalCalculationMode: 4
   importAnimation: 1

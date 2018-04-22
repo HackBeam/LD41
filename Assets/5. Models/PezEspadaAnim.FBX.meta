@@ -1,15 +1,31 @@
 fileFormatVersion: 2
-guid: 7c12489d88a5d754a96bd413b4fccf2d
+guid: 013ffe6dd01dad04d8f1a472346ea975
+timeCreated: 1524327266
+licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: No Name
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Galeon001
+    100000: Cabeza
+    100002: Cola01
+    100004: Cola02
+    100006: Lomo01
+    100008: Lomo02
+    100010: PezEspada
+    100012: //RootNode
+    100014: Texture Group
+    400000: Cabeza
+    400002: Cola01
+    400004: Cola02
+    400006: Lomo01
+    400008: Lomo02
+    400010: PezEspada
+    400012: //RootNode
+    400014: Texture Group
+    2100000: PezEspada
+    4300000: PezEspada
+    7400000: Take 001
     9500000: //RootNode
+    13700000: PezEspada
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -36,11 +52,39 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 2
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
@@ -61,8 +105,8 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
-    normalSmoothAngle: 60
-    normalImportMode: 0
+    normalSmoothAngle: 0
+    normalImportMode: 1
     tangentImportMode: 3
     normalCalculationMode: 4
   importAnimation: 1
