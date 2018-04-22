@@ -33,3 +33,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+Assets/Plugins/Demigiant/DOTweenPro/
+
+Assets/Plugins/
